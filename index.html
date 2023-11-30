@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objective checkpoint</h1>
+    <script>
+      function estPalindrome(mot) {
+        var i = 0;
+        var j = mot.length - 1;
+
+        while (i < j) {
+          if (mot.charAt(i) !== mot.charAt(j)) {
+            return false;
+          }
+          i++;
+          j--;
+        }
+
+        return true;
+      }
+
+      console.log(estPalindrome("php")); // Affiche true
+      console.log(estPalindrome("kayak")); // Affiche true
+      console.log(estPalindrome("gag")); // Affiche true
+      console.log(estPalindrome("php")); // Affiche true
+      console.log(estPalindrome("js")); // Affiche false
+    </script>
+  </body>
+</html>
